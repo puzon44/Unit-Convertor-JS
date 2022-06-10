@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Unit Converter</title>
+</head>
+<body>
+  <main class="main-container">
+    <section class="card-container">
+
+      <div class="card-input">
+        <h1 class="card-headline">Metric / Imperial Unit Conversion</h1>
+        <form class="form">
+          <label for="user-input"></label>
+          <input type="number" name="user-input" id="user-input" placeholder="Type a number" required>
+        </form>
+      </div>
+
+      <div class="card-conversion">
+        <div>
+          <h3>Length (Meters / Feet)</h3>
+          <p id="length">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+        </div>
+        <div>
+          <h3>Volume (Liters / Gallons)</h3>
+          <p id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+        </div>
+        <div>
+          <h3>Mass (Kilograms / Pounds)</h3>
+          <p id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script defer src="calculation.js"></script>
+</body>
+</html>
